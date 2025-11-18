@@ -1,0 +1,14 @@
+@charset "UTF-8"; <-- essa é uma regra de para acentuação, que usamos no HTML 
+
+ body {
+        background-color: lightgray;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    h1{
+        background-color: brown; 
+        color: rgb(37, 37, 132);
+    }
+    h2{
+        color: blueviolet;
+    }

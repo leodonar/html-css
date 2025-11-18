@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        
+        <source media="(max-width:750px)" srcset="imagem/foto-p.png" type="image/png">
+                       <!--alteramos o "min" para "max" na (min-width:) e adicionamos "png" ao termino da sequência "image/", ficando "image/png"
+                       em "srcset" digitamos a localização da imagem (nesse caso, não há como usar o "CTRL+ESPAÇO" para localizar a pasta)--> 
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--foi adicionado a tag "source" para fazer a substituição para "foto-m" quando a "foto-g" ficar muito grande para um aparelho menor. -->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        
+    </picture>
+    <h1>Reproduzindo áudios.</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midias/Excess - Freedom Trail Studio.mp3" controls autoplay> </audio>
+<!--Caso a reprodução da atribuição "autoplay" não funcionar em MP3, existem as opções OGG e WAV também. Abaixo um exemplo de como ficaria essas opções, colocando a opção de "source:src" dentro da tag de audio-->
+    <audio preload="metadata"> <!--há três opções na atribuição "preload", sendo eles "auto", "metadate" e "none"
+
+    auto = irá carregar a página completa quando carregar o áudio inteiro
+
+    metadate = irá carregar o nome e algumas inforamções do arquivo, tipo data, duração...
+
+    none = não irá carregar NADA! Apenas o play para quando o usuário quiser, clicar.
+    
+    OBS.: pode ser posto uma atribuição "loop" dentro da tag "audio" para tocar novamente de forma automática após encerrar o áudio-->
+
+         <!-- OBS.: o mecanismo abaixo deve ser usado de forma ordenada. Primeiro, o formato que ele tentará carregar até o próximo em sequência. Sendo MP3 mais leve e WAV mais pesado. OBS2.: Pode ser posto todos os "source" abaixo, pois é uma forma de, se o navegador do usuário não carregar em um formato, ele tentar carregar o sequencial-->
+        <source src="midias/Excess - Freedom Trail Studio.mp3" type="audio/mpeg"> <!--para áudio em MP3 o "type" será audio/MPEG-->
+        <source src="midias/Excess - Freedom Trail Studio.ogg" type="audio/ogg"> <!--para áudio em OGG o "type" será audio/OGG-->
+        <source src="midias/Excess - Freedom Trail Studio.wav" type="audio/wav"> <!--para áudio em WAV o "type" será audio/WAV 
+        ATENÇÃO: arquivo em WAV costuma ser muito grande, trazendo lenditão para o site, É BOM EVITAR!-->
+
+        <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midias/Excess - Freedom Trail Studio.mp3">Clique aqui para baixar o arquivo MP3</a> </p> <!--essa paragráfo é posto para caso o navegador do usuário não reproduza o áudio, ele aparecerá como opção de download com a tag "<a>"-->
+    </audio>
+    
+
+
+
+</body>
+</html>

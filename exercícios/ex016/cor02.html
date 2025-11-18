@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <!--Estilo Local-->
+
+    <style>
+      /*configurações globais da CSS -> */
+        *{ height: 100%;
+
+        }
+        body{
+          /*Para colocar cores em degrader, não usaremos a tag background-color, e sim, a backgroud-image. */
+          background-image: linear-gradient(to bottom/*pode ser posto para direita (right), para esquerda e etc. */, white, blue); /*pode ser posto quantas cores quiser, mas não podemos ultrapassar a palheta. Principalmente, não devemos gastar todas as cores da palheta apenas no fundo*/
+          background-attachment: fixed; /*para fixar a barra de rolagem do gradiente ao fundo */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+
+</body>
+</html>

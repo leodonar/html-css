@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Courier New' /* quando usado duas palavras, é necessário colocar aspas */, Courier, monospace; /* essa outras duas fontes são combinações, caso o seu site seja acessado por um dispositivo que não funcione uma das fontes. Então, a susgestão é colocar outras fontes. */
+            /* para achar a combinação de fontes, busque no Google "CSS web safe fonts combinations" (www.w3schools.com)*/
+            /*caso não queria selecionar um fonte especifica, opite por "sans-serif" (fonte aleatória sem serifa), "serif" (fonte aleatória com serifa) ou "monospace" (fonte aleatória mono espaçada) 
+            Todas as opções serão escolhidas pelo próprio dispositivo */
+            /* para medida de fonte, é recomendado pela 'w3c' o 'px' (medida absoluta) e o 'em' (medida relativa) */
+            /*peso da fonte é font-weight*/
+            /*weight = peso.
+            widht = largura
+            height = altura */
+        }
+
+        h1 {
+            /*
+              ³font-size: 1em (para tamanho da fonte)
+              ¹font-style: italic (para colocar em italico)
+              font-weight: para o peso (lighter, normal, bold, bolder)
+              font-decotation: underline (sublinhar)
+              font-family: ___ (para escolher a fonte que deseja) 
+              isso se chama 'shorthand font' */
+
+              /*ORDEM: font-style¹ -> font-weight² -> font-size³ -> font-family
+              EXEMPLO: font: italic bolder 3em 'work sans, sans-serif*/
+              font: italic bolder 3em 'work sans, sans-serif';
+        }
+        h2 { 
+            font: bold 2em 'work sans';
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam similique accusantium iste maxime sunt, itaque tempore. Fugiat exercitationem odio, voluptatum sed at sint eveniet similique culpa perspiciatis assumenda possimus tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta temporibus, nihil ipsa saepe quod mollitia quibusdam quas aspernatur quam facere nulla, adipisci eveniet minus similique neque maxime! A, obcaecati sapiente.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur error, libero voluptates optio assumenda nemo iure blanditiis quisquam earum, expedita accusantium. Illo a culpa quia sequi architecto quis tempora et!</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sint quia esse facere, consequuntur sequi aut ut saepe dignissimos voluptatum numquam debitis, sunt autem sed suscipit cupiditate, veritatis quo vitae.</p>
+    
+</body>
+</html>

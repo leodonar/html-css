@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*
+Sempre que usar em HTML "id" = "#" em CSS
+Sempre que usar em HTML "class" = "." em CSS
+*/
+
+/*
+id = # tem que ser apenas um único elemento por página de HTML
+class = . pode ser vários elementos
+*/
+/*
+*/
+body {
+    background-color: rgb(200, 246, 200);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(0, 31, 0);
+
+}
+h2 {
+    color: rgb(20, 87, 20);
+
+}
+
+h1#principal {
+    text-align: center;
+}
+h2.basico {
+    color: rgb(63, 136, 21);
+
+}
+/*ou apenas coloque o nome*/ 
+
+.intermediario {
+    color: rgb(194, 194, 10);
+
+}
+.avançado {
+    color: rgb(206, 22, 22);
+}

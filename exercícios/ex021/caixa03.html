@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1 {
+            border: 12px solid transparent; /* pode conter uma cor também. Ex.: black*/
+            padding: 10px;
+
+            border-image-source: url('*/coloque a pasta com a url aqui/*');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+            /*segue abaixo a abreviação dessas ultimas 3 border para uma única linha (shorthand)*/
+            border-image: url('nomedapasta') 27 repeat; /*precisa ser exatamente na sequência: source, slice e repeat*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Teste de borda</h1>
+    <p>vamos aprender a fazer uma borda com imagem</p>
+    <!--no "style", use as tags "border" para criar uma borda e o "border-image-source" para procurar uma imagem no url. Em cima segue os exemplos.-->
+</body>
+</html>

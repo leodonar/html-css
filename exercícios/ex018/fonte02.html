@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    
+    <style>
+        @font-face {
+            font-family: 'OldLondon';
+            src: url('fonts/Olondon_otf.otf'), url('fonts/Olondona.otf.otf'), url('fonts/OldLondonAlternate.ttf.ttf'), url('fonts/OldLondon.ttf.ttf');
+            font-weight: normal;
+            font-style: normal; 
+        }
+        @font-face {
+            font-family: 'Escrita';
+            src: url('fonts/Avenue\ de\ Madison.ttf');
+            font-weight: normal;
+        }
+        
+        /*www.dafont.com
+        um ótimo site para baixar fontes*/
+        /*Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+        */
+
+        /*Para identificar fontes na imagem acesse os sites:
+        whatfontis.com (esse é o melhor)
+        fontsquirrel.com
+        myfonts.com
+        */
+        body {
+            font-family: 'Escrita';
+            font-weight: normal;
+        }
+        h1 {
+            font-family: 'OldLondon';
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolorem incidunt adipisci totam voluptatem quaerat quod, animi itaque, dolor exercitationem a vitae deserunt nihil dicta nisi excepturi fugit perferendis omnis.</p>
+    
+</body>
+</html>

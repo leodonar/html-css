@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* 
+        #  = id
+        .  = class
+        :  = pseudo-classe
+        :: = pseudo-elemento
+        >  = Children
+        */
+
+        /*para procurar um simbolo, vá ao google e pesquise "simbolo para html" */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: #5454bf;
+            text-decoration: none; /*essa função desabilita o sublinhado dos links*/
+            font-weight: bold;
+        
+         }
+        a:visited { /*uma pseudo-classe para o "link". Assim,podemos mudar a cor que é posto após clicar no link e acusar a visualização */ 
+        color: #282860;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+     
+        a:active {
+            /*essa é a cor que fica quando clicamos no link. Essa cor é momentânea, apenas para o momento de clique*/
+            color: #bbbb00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://flamengo.com.br">Site Flamengo</a></li>
+        <li><a href="https://nacao.flamengo.com.br/">Site Nação</a></li>
+        <li><a href="https://www.youtube.com/@flamengo">Canal Flamengo TV</a></li>
+    </ul>
+    
+</body>
+</html>
